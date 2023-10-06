@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mygallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script defer src="navbar.js"></script>
+    <script defer src="modal.js"></script>
+</head>
+<body>
+    <header>
+        <div id="profile">
+            <img src="./assets/avatar.webp" alt="avatar">
+            <a href="https://www.instagram.com/mazzarohpi/" class="arroba">@mazzarohpi</a>
+            <p>joao vito</p>
+            <p>cacetinho com chimia</p>
+            <a href="https://open.spotify.com/playlist/7oAkzH792smGJ1mU81Wbhv?si=1ba225f081e54c05"><ion-icon name="headset" id="playlist"></ion-icon></a>
+            <a href="http://127.0.0.1:5500/index.html" id="link-a-copiar" style="display: none;">http://127.0.0.1:5500/index.html</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="navegation">
+            <a href="#">gallery</a>
+            <a href="#">collection</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="galeria">
+            <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotoum.webp" alt="fotoum" id="open-modal">
+            <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotodois.webp" alt="fotodois">
+            <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fototres.webp" alt="fototres">
+            <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotoquatro.webp" alt="fotoquatro">
+            <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotocinco.webp" alt="fotocinco">
+            <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotoseis.webp" alt="fotoseis">
+        </div>
+    </section>
+
+    <section>
+        <div class="vermais">
+            <input type="button" value="load more" id="vermais" onclick="exibir('segundo-conteudo')">
+        </div>
+    </section>
+
+    <section>
+            <div id="segundo-conteudo">
+                <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotosete.webp" alt="fotosete">
+                <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotooito.webp" alt="fotooito">
+                <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotonove.webp" alt="fotonove">
+                <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotodez.webp" alt="fotodez">
+            </div>
+    </section>
+
+    <aside>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="skull-outline"></ion-icon></ion-icon></span>
+                        <span class="title"><b>PROFILE</b></span>   
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#explore">
+                        <span class="icon"><ion-icon name="globe-outline"></ion-icon></span>
+                        <span class="title">EXPLORE</span>
+                    </a>
+                </li>
+
+                <!--
+                <li class="logout">
+                    <a href="#sign">
+                        <span class="icon"><ion-icon name="chevron-forward-outline" style="display: none;"></ion-icon></span>
+                        <span class="title">SIGN UP</span>
+                    </a>
+                </li>
+
+                <li class="logout">
+                    <a href="#login">
+                        <span class="icon"><ion-icon name="chevron-forward-outline" style="display: none;"></ion-icon></span>
+                        <span class="title">LOGIN</span>
+                    </a>
+                </li>
+                -->
+            </ul>
+
+            <div class="toggle"></div>
+        </div>
+    </aside>
+
+    <!--
+    <aside>
+        <div id="fade" class="hide"></div>
+            <div id="mod" class="hide">
+                <div class="mod-header">
+                    <h3>30 de novembro de 2022</h3>
+                    <button class="buttn" id="close-mod"><ion-icon name="close-outline"></ion-icon></button>
+                </div>
+            <div class="mod-body">
+                <div class="contact">
+                    <img src="assets/@mazzarohpi • Fotos e vídeos do Instagram_files/fotoum.webp" id="open-modal">
+                </div>
+            </div>
+        </div>
+    </aside>
+    -->
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; sr epaminondas</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/mazzarohpi/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.tiktok.com/@jaocudobetes?lang=pt-BR"><ion-icon name="logo-tiktok"></ion-icon></a>
+            <a href="https://x.com/jovituuu?t=Nllzkr010IHuK0vATMAfjA&s=09"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

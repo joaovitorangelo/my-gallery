@@ -445,35 +445,64 @@ h3 {
     border-radius: 20px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 328px){
+    .navbar.active {
+        width: 0;
+    }
     #profile img{
-        width: 200px;
+        transform: translateX(-30px);
+        width: 145px;
     }
     .arroba {
-        font-size: 35px;
+        transform: translateX(-30px);
+        font-size: 20px;
     }
     #profile p{
-        font-size: 25px;
+        transform: translateX(-30px);
+        font-size: 15px;
     }
     #playlist {
-        font-size: 45px;
-    }
-    .navegation {
+        transform: translateX(-30px);
         font-size: 25px;
     }
-    .galeria {
-        display: flex;
-        flex-direction: column;
-        width: 50px;
+    .navegation {
+        transform: translateX(-30px);
+        font-size: 15px;
     }
-    .segundo-conteudo {
-     
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 250px;
+        transform: translate(-100px, -50px);
+    }
+    .galeria img {
+        width: 250px;
+    }
+    #segundo-conteudo {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 250px;
+        transform: translate(-100px, -50px);
+    }
+    #segundo-conteudo img {
+        width: 250px;
+    }
+    .vermais {
+        margin-top: -50px;
+        transform: translateX(-30px);
+    }
+    footer {
+        transform: translateX(0px);
+        width: 310px;
     }
     .copyright {
+        transform: translateX(-35px);
         font-size: 15px;
     }
     .social-media {
         font-size: 20px;
-        transform: translateX(-40px);
+        transform: translateX(10px);
+    }
+    .toggle-mobile {
+        display: flex;
     }
 }
+

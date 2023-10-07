@@ -51,13 +51,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 50px;
+    padding: 50px;
     position: relative;
 }
 
-.navegation a {
+.navegation p {
     color: #6b6b6b;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .galeria {
@@ -469,6 +470,38 @@ h3 {
     white-space: nowrap;
 }
 
+/*swipper*/
+#susu {
+    display: none;
+    justify-content: center;
+}
+
+main {
+    width: 50%;
+}
+
+.swiper-slide img {
+    width: 100%;  
+    aspect-ratio: 16/11;  
+    filter: blur(1px);
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.swiper {
+    border-radius: 20px;
+    height: 450px;
+    border: 1px solid #ccc;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
 @media (max-width: 768px){
     #profile img{
         width: 45%;
@@ -493,5 +526,11 @@ h3 {
     }
     .copyright {
         left: 0;
+    }
+    main {
+        width: 90%;
+    }
+    .swiper {
+       height: 30vh;
     }
 } 

@@ -480,17 +480,18 @@ h3 {
     }
     .galeria {
         grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 0;
+        gap: 400px;
         padding-bottom: 100px;
     }
     #segundo-conteudo {
         grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 0;
+        gap: 400px;
         padding-bottom: 100px;
     }
     .navbar {
         display: none;
-    }
-    .copyright {
-        left: 0;
     }
     .container {
         display: flex;

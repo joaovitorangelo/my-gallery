@@ -9,12 +9,7 @@ html {
 }
 
 body {
-    background: var(--bg-url);
     font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-    --bg-url: url(./assets/daniel-johnston.jpg);
 }
 
 #profile {

@@ -352,19 +352,17 @@ h3 {
     #profile img{
         width: 45%;
     }
-    .vermais {
-        
-    }
     section {
         display: flex;
         justify-content: center;
     }
     .galeria {
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 100px;
     }
     #segundo-conteudo {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 100px;
     }
     .navbar {
         display: none;

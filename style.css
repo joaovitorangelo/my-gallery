@@ -346,5 +346,19 @@ h3 {
 */
 
 @media (max-width: 768px){
- 
+    #profile img{
+        width: 45%;
+    }
+    .vermais {
+        display: none;
+    }
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+    }
+    #segundo-conteudo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+    }
 } 

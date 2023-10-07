@@ -23,8 +23,10 @@ body {
 }
 
 #profile img {
-    width: 10%;
-    border-radius: 100px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    border-radius: 50%;
 }
 
 .arroba {
@@ -70,13 +72,12 @@ body {
 .galeria img {
     width: 320px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.70);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 /*navbar*/
 .navbar {
-    display: none;
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: 1;
     background: rgb(32, 32, 32);
@@ -200,6 +201,8 @@ footer {
     color: #777777;
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+    left: 8%;
 }
 
 .social-media {
@@ -261,7 +264,7 @@ footer {
 #segundo-conteudo img {
     width: 320px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.70);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 /*modal
@@ -350,15 +353,23 @@ h3 {
         width: 45%;
     }
     .vermais {
-        display: none;
+        
+    }
+    section {
+        display: flex;
+        justify-content: center;
     }
     .galeria {
         grid-template-columns: repeat(1, 1fr);
-        padding: 50px;
     }
     #segundo-conteudo {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 50px;
+    }
+    .navbar {
+        display: none;
+    }
+    .copyright {
+        left: 0;
     }
 } 

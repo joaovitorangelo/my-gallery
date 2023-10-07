@@ -511,12 +511,17 @@ main {
         justify-content: center;
     }
     .galeria {
+        background: blue;
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 100px;
+        margin-bottom: 100px;
+        padding: 0;
     }
     #segundo-conteudo {
+        background: yellow;
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 100px;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        padding: 0;
     }
     .navbar {
         display: none;

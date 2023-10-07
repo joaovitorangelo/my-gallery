@@ -18,9 +18,8 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    margin-top: 50px;
+    padding: 5%;
     position: relative;
-    left: 30px;
 }
 
 #profile img {
@@ -39,11 +38,6 @@ body {
     color: #6b6b6b;
 }
 
-#botao-copiar {
-    cursor: pointer;
-    transform: translateY(3px);
-}
-
 #playlist {
     color: black;
     font-size: 30px;
@@ -57,7 +51,6 @@ body {
     gap: 50px;
     margin-top: 50px;
     position: relative;
-    left: 30px;
 }
 
 .navegation a {
@@ -69,9 +62,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
-    padding: 130px;
+    padding: 100px;
     gap: 100px;
-    width: 199vh;
     cursor: pointer;
 }
 
@@ -83,7 +75,8 @@ body {
 
 /*navbar*/
 .navbar {
-    position: fixed;
+    display: none;
+    position: absolute;
     inset: 0;
     z-index: 1;
     background: rgb(32, 32, 32);
@@ -190,14 +183,9 @@ body {
     display: block;
     padding: 0 10px;
     height: 60px;
-    line-height: 60px;
+    line-height: 55px;
     text-align: start;
     white-space: nowrap;
-}
-
-.logout {
-    font-weight: bold;
-    transform: translateY(320px);
 }
 
 footer {
@@ -206,8 +194,6 @@ footer {
     align-items: center;
     padding: 50px;
     background: #ccc;
-    transform: translateX(80px);
-    width: 95%;
 }
 
 .copyright {
@@ -240,9 +226,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
-    position: relative;
-    left: 35px;
+    padding: 2%;
 }
 
 #vermais {
@@ -268,9 +252,8 @@ footer {
     display: none;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 300px;
-    padding: 130px;
+    padding: 100px;
     gap: 100px;
-    width: 199vh;
     cursor: pointer;
 }
 
@@ -280,7 +263,7 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.70);
 }
 
-/*modal*/
+/*modal
 #fade,
 #mod {
     transition: 0.5s;
@@ -359,85 +342,14 @@ h3 {
     object-fit: cover;
     border-radius: 20px;
 }
+*/
 
-/*modaldois*/
-#fadedois,
-#moddois {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
-}
-
-#fadedois {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 5;
-}
-
-#moddois {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255);
-    z-index: 10;
-    width: 500px;
-    max-width: 90%;
-    padding: 1.2rem;
-    border-radius: 0.5rem;
-}
-
-.mod-headerdois {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-}
-
-h3 {
-    color: black;
-}
-
-.mod-bodydois p {
-    margin-bottom: 1rem;
-    color: rgb(0, 0, 0);
-}
-
-#moddois.hidedois,
-#fadedois.hidedois {
-    opacity: 0;
-    pointer-events: none;
-}
-
-#moddois.hidedois {
-    top: 0;
-}
-
-.buttndois {
-    background: none;
-    cursor: pointer;
-    border: none;
-    color: black;
-    transition: .2s;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.buttndois:hover {
-    transform: scale(0.90);
-}
-
-.contactdois img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-
+@media (max-width: 768px){
+    .navbar {
+        display: none;
+    }
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 300px;
+    }
+} 

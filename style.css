@@ -491,4 +491,7 @@ h3 {
     .container {
         display: flex;
     }
+    .copyright {
+        left: 0;
+    }
 } 

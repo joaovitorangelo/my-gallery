@@ -192,8 +192,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
     background: #ccc;
+    padding: 3%;
 }
 
 .copyright {
@@ -204,6 +204,7 @@ footer {
 
 .social-media {
     display: flex;
+    margin-top: 10px;
     font-size: 25px;
     gap: 10px;
 }
@@ -345,11 +346,5 @@ h3 {
 */
 
 @media (max-width: 768px){
-    .navbar {
-        display: none;
-    }
-    .galeria {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 300px;
-    }
+ 
 } 
